@@ -1,0 +1,114 @@
+.wait{
+    position: relative;
+    left: 38rem;
+}
+.input{
+    text-align: center;
+    margin: 3rem 0rem ;
+    input{
+        width: 20rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+      input::placeholder{
+        font-size: 1rem;
+        position: relative;
+        top: 0rem;
+        left: 1rem;
+        }
+      button{
+        display: block;
+        margin: 3rem auto;
+        border: none;
+        background: rgb(235, 136, 136);
+        color: white;
+        height: 3rem;
+        width: 15rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s all ease;
+      }
+      button:hover{
+        background: rgb(199, 83, 83);
+      }
+  }
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    th:nth-child(1){border-left: none;}
+    th{
+      padding-top: 0.8rem;
+      padding-bottom: 1.2rem;
+      border-bottom: 1.2px solid black;
+      border-left: 1.2px solid black;
+    }
+    tr td:nth-child(1){border-left: none;}
+    tr td{
+      border-left: 1.2px solid black;
+      height: 2.5rem;
+      .loc{font-weight: bold;}
+    }
+  }
+  
+  
+  
+  @media (min-width:300px) and (max-width: 500px){
+    .wait{
+        position: relative;
+        left: 36vw;
+    }
+    .input{
+      text-align: center;
+      margin: 3rem 0rem ;
+      input{
+        width: 20rem;
+        height: 2.5rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.5rem;
+      }
+      input::placeholder{
+        font-size: 1rem;
+        position: relative;
+        top: 0rem;
+        left: 1rem;
+        }
+      button{
+        display: block;
+        margin: 3rem auto;
+        border: none;
+        background: rgb(235, 136, 136);
+        color: white;
+        height: 3rem;
+        width: 15rem;
+        font-size: 1.2rem;
+        border-radius: 5px;
+      }
+    }
+    table{
+      width: 100%;
+      font-size: 0.65rem;
+      th:nth-child(1){width: 20%;}
+      th:nth-child(2){width: 20%;}
+      th:nth-child(3){width: 25%;}
+      th:nth-child(4){width: 20%;}
+      th:nth-child(5){width: 15%;}
+      th{
+        transform: scale(1.05);
+        font-size: 0.8rem;
+        border-bottom: 1.2px solid black;
+      }
+      tr{
+        font-weight: bold;
+      }
+      tr td{
+        font-size: 0.75rem;
+      }
+    }
+  }
