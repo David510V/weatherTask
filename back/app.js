@@ -1,9 +1,11 @@
 const express=require('express')
 const puppeteer=require('puppeteer')
 const cors=require('cors')
+//
 require('dotenv').config({path:'./env/dev.env'})
 const port=process.env.PORT 
-var app=express()
+
+const app=express()
 app.use(express.json())
 app.use(cors())
 
@@ -51,7 +53,8 @@ let weatherCrawler= async (name)=>{
         imgSrc
     }
     console.log(obj)
-    return obj
+    browser.close()
+    return await obj
 }
 /////////////////////////////////
 
